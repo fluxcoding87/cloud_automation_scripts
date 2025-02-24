@@ -4,11 +4,11 @@
 
 1. First allow execute permissions
 
-> $ chmod u+x <script-name>
+> $ chmod u+x [script-name]
 
 2. Run the scripts and provide positional arguments if needed
 
-> $ ./<script-name> $1 $2 ...
+> $ ./[script-name] $1 $2 ...
 
 ### USAGE ---- FOR PYTHON SCRIPTS
 
@@ -28,4 +28,4 @@ python3 --version
 
 - Run the python3 script
 
-> python3 <script-name>
+> python3 [script-name]
