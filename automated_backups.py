@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env /usr/bin/python3
 
 import subprocess
 import boto3
@@ -29,7 +29,7 @@ def backupAndUploadToS3(sourcePath:str="/home/naman-pandey/backups"):
 
 if __name__ == "__main__":
   print("Checking S3 Bucket (if not present then creating one)")
-  bucket = subprocess.run(["./s3_helper_backup.sh", "fluxcoding87-backup"])
+  bucket = subprocess.run(["./s3_helper_backup.sh", "fluxcoding87-backup"], capture_output=True)
   try:
     if (bucket.returncode != 0):
       print(f"Something Went Wrong!\nError:{bucket.stderr.decode()}")

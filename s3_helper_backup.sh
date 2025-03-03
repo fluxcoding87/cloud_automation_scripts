@@ -1,11 +1,12 @@
 #!/bin/bash
 
 ####################################################################################
-# This script is a helper script for a bigger script written in automated_backup.py#
+# This script is a helper script for a bigger script written in automated_backups.py#
 # This script creates an S3 Bucket named backup-bucket if it does not exist       
 # Author: Naman/Devops Team
 # Version: v0.0.1                                                                                   
 ####################################################################################
+
 
 # Check for positional arguments
 if  [ $# -ne 1 ]; then
